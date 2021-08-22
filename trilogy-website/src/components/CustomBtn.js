@@ -8,7 +8,7 @@ const StyledButton = withStyles({
         alignItems: "center",
         justifyContent: "center",
         maxWidth: "250px",
-        float: 'right',
+        //float: 'right',
         height: "50px",
         fontWeight: "600",
         padding: "0 25px",
