@@ -7,6 +7,8 @@ import {makeStyles} from '@material-ui/core/styles'
 const styles = makeStyles({
     bar:{
         backgroundColor: "#fff",
+        maxWidth: "1350px", 
+        margin: "auto",
         ['@media (max-width:780px)']: { 
            flexDirection: "column"
           }

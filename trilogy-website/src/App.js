@@ -2,6 +2,7 @@ import { createTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles
 import './App.css';
 import CustomBtn from './components/CustomBtn'
 import NavBar from './components/NavBar';
+import Page from './components/Page';
 
 const theme = createTheme({
   palette: {
@@ -35,9 +36,6 @@ const styles = makeStyles({
     textAlign: "center",
     maxWidth: "1280px"
   },
-  bigSpace: {
-    marginTop: "5rem"
-  },
   littleSpace:{
     marginTop: "2.5rem",
   },
@@ -53,9 +51,13 @@ function App() {
   const classes = styles();
 
   return (
-    <div className="App" style={{maxWidth: "1280px", margin: "auto"}}>
+    <div className="App">
       <ThemeProvider theme={theme}>
         <NavBar></NavBar>
+        <div className={`${classes.grid}`}>
+          <Page title="Find it, Copy it, Save it" description="Trilogy URL Copier is a Chrome extension that makes
+          copying and sending URLs easier than ever!"></Page>
+        </div>
       </ThemeProvider>
     </div>
     
