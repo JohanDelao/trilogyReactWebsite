@@ -1,6 +1,12 @@
 # trilogyReactWebsite
 Hello anyone who is reading this!
 This is gonna be a website for my chrome extension Trilogy (Which you can find the code for here: https://github.com/JohanDelao/Trilogy). I am gonna use JavaScript, specifically the framework React.js.
+<br><br>
+(8/28 Update) I have worked on the website and I am basing it on this wireframe:
+<img src="https://github.com/JohanDelao/trilogyReactWebsite/blob/main/reactWebsiteWireframe.PNG" width=250><br>
+This is how the website currently looks like:
+<img src="https://github.com/JohanDelao/trilogyReactWebsite/blob/main/trilogyWebsiteGIF1.gif" width=250><br>
+Sorry for the weird format! It cuts off the right side for some reason (I am guessing due to the size of the gif)
 
 # Getting Started with Create React App
 
