@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Page from './components/Page';
 import Page2 from './components/Page2';
 import Grid from './components/AppGrid';
+import Review from './components/Review';
 
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -12,9 +13,12 @@ import { SiSlack } from "react-icons/si";
 import { SiGmail } from 'react-icons/si';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import { SiMessenger } from 'react-icons/si';
-import { FaCloud } from 'react-icons/fa'
+import { FaCloud } from 'react-icons/fa';
 import { SiDiscord } from 'react-icons/si';
 import { SiMicrosoftoutlook } from 'react-icons/si';
+
+import AlexProfilePic from './alexPicture.jfif'
+import GaryProfilePic from './garyPicture.jfif'
 
 const theme = createTheme({
   palette: {
@@ -84,12 +88,20 @@ function App() {
           <Grid icon={<LinkedInIcon style={{fill: "#4360A6", height: "65", width: "65"}}/>}/>
           <Grid icon={<RedditIcon style={{fill: "#D05B2D", height:"65", width:"65"}}/>}/>
         </div>
-        <div className={`${classes.grid}`} style={{paddingBottom: "10%"}}>
+        <div className={`${classes.grid}`} style={{paddingBottom: "6%"}}>
           <Grid icon={<FacebookIcon style={{fill: "#4a00ba", height:"65", width:"65"}}/>}/>
           <Grid icon={<SiSlack style={{fill: "#009166", height:"65", width:"65"}}></SiSlack>}/>
           <Grid icon={<FaCloud style={{fill: "#13afe8", height: "65", width: "65"}}/>}/>
           <Grid icon={<SiDiscord style={{fill: "#3013c2", height: "65", width: "65"}}/>}/>
           <Grid icon={<SiMicrosoftoutlook style={{fill: "#0551a8", height:"65", width:"65"}}/>}/>
+        </div>
+        <div className="reviewTitle" style={{paddingBottom: "2%"}}>
+          <h4 style={{fontFamily: "Merriweather", fontWeight: "900", fontSize: "28px", marginBottom: "0px", paddingBottom: "10px"}}>Trilogy is for Everyone!</h4>
+          <h8>(Reviews come from Chrome Web Store)</h8>
+        </div>
+        <div className={`${classes.grid}`} style={{paddingBottom: "2%"}}>
+        <Review profilePic={AlexProfilePic} name="Alexander Little" occupation="Former SWE Intern at Microsoft" quote=' "This extension is awesome!!! I never knew that I needed this app until I found it" '/>
+        <Review profilePic={GaryProfilePic} name="Gary Coltrane" occupation="Full Stack Engineer at Carvana" quote=' "Great extension! LITERALLY SOLVES A PROBLEM FOR ME." '></Review>
         </div>
       </ThemeProvider>
     </div>

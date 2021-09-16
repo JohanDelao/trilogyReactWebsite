@@ -24,10 +24,10 @@ function Page(props) {
     return (
         <div className={classes.wrapper}>
             <div className="leftSide" style={{textAlign: "left"}}>
-                <Typography className={classes.item} variant="h4" style={{fontFamily: "Merriweather", fontWeight: "900"}}>{title}</Typography>
-                <Typography className={classes.item} variant="h6" style={{paddingBottom: "1rem"}}>{description}</Typography>
-                <CustomBtn/>
-                <Rating name="read-only" value={10} readOnly style={{padding: "1rem 0 1rem 0"}}></Rating>
+            <Typography className={classes.item} variant="h4" style={{fontFamily: "Merriweather", fontWeight: "900"}}>{title}</Typography>
+            <Typography className={classes.item} variant="h6" style={{paddingBottom: "1rem"}}>{description}</Typography>
+            <CustomBtn/>
+            <Rating name="read-only" value={10} readOnly style={{padding: "1rem 0 1rem 0"}}></Rating>
             </div>
             <div className={classes.item}><img src={image} alt="Logo" /></div>
         </div>
